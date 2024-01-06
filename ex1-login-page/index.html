@@ -7,10 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CSS Framework (Tailwind) Exercise 1</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <!-- Start coding here -->
+  <div class="bg-slate-200 webpage">
+      <form class="bg-white rounded-xl form-edited">
+          <h3 class="text-zinc-600 text-xl login-header">Login to Website</h3>
+          <div class="form-group">
+              <label class="label-text" for="email">Email</label>
+              <input class="input-edited border border-zinc-600 p-2 focus:border-violet-300 hover:border-violet-500" id="email" type="email" />
+          </div>
+          <div class="form-group">
+              <label class="label-text" for="password">Password</label>
+              <input class="input-edited border border-zinc-600 p-2 focus:border-violet-300 hover:border-violet-500" id="password" type="password" />        
+          </div>
+          <div class="buttons">
+              <button type="submit" class="w-36 p-2 rounded-full bg-violet-500 text-white hover:bg-violet-400 focus:ring-2 focus:ring-violet-300 active:bg-violet-600">Sign in</button>
+              <button type="submit" class="w-36 p-2 rounded-full bg-white text-violet-500 hover:bg-violet-100 focus:ring-2 focus:ring-violet-300 focus:text-violet-600">Sign Up</button>
+          </div>
+      </form>
+  </div> 
 </body>
 
 </html>
